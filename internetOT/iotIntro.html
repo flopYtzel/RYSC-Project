@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="shortcut icon" href="../assets/icon.svg">
+  <title>Proyecto Integrador</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand title-text" href="../index.html">Redes y Seguridad de Computadoras</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-white bg-dark" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav navbar-dark bg-dark justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Sockets</a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item text-light" href="../sockets/socketsIntro.html">Introducción</a></li>
+                <li><a class="dropdown-item text-light" href="../sockets/socketsDefin.html">Definición</a></li>
+                <li><a class="dropdown-item text-light" href="../sockets/socketsProg.html">Programando</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Seguridad en una red</a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item text-light" href="../redSecure/redIntro.html">Introducción</a></li>
+                <li><a class="dropdown-item text-light" href="../redSecure/ipSecure.html">IP Secure</a></li>
+                <li><a class="dropdown-item text-light" href="../redSecure/redVpn.html">VPN</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Seguridad en la Web</a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item text-light" href="../webSecure/seguridadWeb.html">Introducción</a></li>
+                <li><a class="dropdown-item text-light" href="../webSecure/https.html">HTTPS</a></li>
+                <li><a class="dropdown-item text-light" href="../webSecure/ssl.html">SSL</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="offcanvasNavbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Internet of Things</a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item text-light" href="/internetOT/iotIntro.html">Introducción</a></li>
+                <li><a class="dropdown-item text-light" href="/internetOT/iotFunct.html">Funcionamiento</a></li>
+                <li><a class="dropdown-item text-light" href="/internetOT/iotApps.html">Aplicaciones IoT</a></li>
+              </ul>
+            </li>
+            <hr>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../recursos.html">Recursos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container-fluid p-3 text-break">
+    <section name="introducction">
+      <div class="info-container-70">
+        <div class="text-justify">
+          <h1 class="h1">¿Internet de las Cosas?</h1>
+          <p>El Internet de las Cosas (IoT) hace referencia a una tecnología basada en la conexión de objetos cotidianos
+            a Internet que intercambian, agregan y procesan información sobre su entorno físico para proporcionar
+            servicios de valor añadido a los usuarios finales. Los sistemas de IoT son autónomos, por lo que pueden
+            reconocer cambios o eventos y reaccionar a ellos de forma adecuada.</p>
+          <p>Esta integración de sensores y dispositivos en objetos cotidianos que quedan conectados a Internet a través
+            de redes alámbricas e inalámbricas, crean una malla gigante de conexiones, formando una especie de sistema
+            nervioso mundial. Esta infraestructura permite a los dispositivos registrar, procesar, almacenar y
+            transferir datos, además están asociados con identificadores únicos para poder interactuar con otros
+            dispositivos o sistemas. </p>
+          <h3 class="h3">Historia</h3>
+          <p>El término Internet de las Cosas fue acuñado por primera vez por el pionero de la tecnología británica
+            Kevin Ashton en una presentación que realizó en 1999 para la multinacional Procter & Gamble, donde describió
+            un sistema en el cual los objetos en el mundo físico podrían conectarse a Internet a través de sensores para
+            automatizar la recogida de datos.</p>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://www.latercera.com/resizer/uEWs8cBqz2f1hl3Ii6VGfo5ieeo=/900x600/smart/cloudfront-us-east-1.images.arcpublishing.com/copesa/YVBYP2C625FPDNVK6N5F5WFIBE.png"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text text-justify">IoT permite conectar elementos físicos cotidianos al Internet: desde
+              objetos domésticos comunes como las bombillas de luz, hasta recursos para la atención de la salud, como
+              los dispositivos médicos e incluso accesorios personales como los relojes inteligentes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section name="definition">
+      <div class="info-container-full">
+        <p class="text-justify">
+          Kevin Ashton recalcó, cómo es que hasta esa fecha, toda la información en la cadena de suministro era
+          introducida por humanos de forma manual, lo que conllevaba a retrasos y errores. Sin embargo, si la
+          información provenía directamente de los objetos, entonces se podría hacer un seguimiento en tiempo real de su
+          utilización, sus características, su vida útil, su estado de funcionamiento, etc., lo cual aumentaría la
+          productividad y reduciría costes.
+        </p>
+        <figure class="text-center bg-dark">
+          <blockquote class="blockquote">
+            <p>"IoT es un mundo donde los objetos físicos se integran perfectamente en la red de información y donde los
+              objetos físicos pueden convertirse en participantes de activos en los procesos empresariales. Los
+              servicios están disponibles para interactuar con estos objetos inteligentes a través de Internet,
+              consultar su estado y cualquier información asociada con ellos, teniendo en cuenta las cuestiones de
+              seguridad y privacidad."</p>
+          </blockquote>
+          <figcaption class="blockquote-footer">
+            HALLER, KARNOUSKOS & SCHIROTH
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+    <hr>
+    <div class="d-flex mt-4 justify-content-between align-items-center">
+      <a class="btn btn-primary btn-lg" href="../index.html" role="button" aria-disabled="true">Ir a Inicio</a>
+      <a class="btn btn-secondary btn-lg" href="../internetOT/iotFunct.html" role="button" aria-disabled="true">¿Cómo
+        funciona IoT?</a>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

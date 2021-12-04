@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="shortcut icon" href="../assets/icon.svg">
+  <title>Proyecto Integrador</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand title-text" href="../index.html">Redes y Seguridad de Computadoras</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-white bg-dark" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav navbar-dark bg-dark justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Sockets</a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item text-light" href="../sockets/socketsIntro.html">Introducción</a></li>
+                <li><a class="dropdown-item text-light" href="../sockets/socketsDefin.html">Definición</a></li>
+                <li><a class="dropdown-item text-light" href="../sockets/socketsProg.html">Programando</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="offcanvasNavbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Seguridad en una red</a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item text-light" href="../redSecure/redIntro.html">Introducción</a></li>
+                <li><a class="dropdown-item text-light" href="../redSecure/ipSecure.html">IP Secure</a></li>
+                <li><a class="dropdown-item text-light" href="../redSecure/redVpn.html">VPN</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Seguridad en la Web</a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item text-light" href="../webSecure/seguridadWeb.html">Introducción</a></li>
+                <li><a class="dropdown-item text-light" href="../webSecure/https.html">HTTPS</a></li>
+                <li><a class="dropdown-item text-light" href="../webSecure/ssl.html">SSL</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Internet of Things</a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item text-light" href="../internetOT/iotIntro.html">Introducción</a></li>
+                <li><a class="dropdown-item text-light" href="../internetOT/iotFunct.html">Funcionamiento</a></li>
+                <li><a class="dropdown-item text-light" href="../internetOT/iotApps.html">Aplicaciones IoT</a></li>
+              </ul>
+            </li>
+            <hr>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../recursos.html">Recursos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container-fluid p-3 text-break">
+    <section id="Vpn">
+      <div class="info-container-70">
+        <div class="text-justify">
+          <h2 class="h2">VPN</h2>
+          <p>La sigla VPN viene del inglés Virtual Private Network. Los dispositivos que se conecten al mismo router que
+            te provee de internet reciben una dirección IP local. La red local hace referencia a todo el conjunto de
+            aparatos que se conectan al mismo router, de tal modo que puedes compartir archivos e impresoras sin
+            necesidad de pasar por internet. Lo que permite una conexión VPN es crear una red local sin que los
+            integrantes estén físicamente en un mismo espacio, sino a través de internet. De ahí que su nombre sea red
+            privada virtual.</p>
+          <h4 class="h4">Funcionamiento</h4>
+          <p><b>Oculta la dirección IP y la ubicación real</b></p>
+          <p>Cuando nos conectamos a la red VPN, tenemos la posibilidad de conectarnos desde un nuevo servidor, mismo
+            que funciona como una puerta de enlace. De esta manera, la IP pública que se muestra no es la nuestra, sino
+            la del servidor en cuestión; en otras palabras, el servicio VPN falsifica la IP original, haciendo que
+            parezca que nos encontramos en otra ciudad o, incluso, en otro país.</p>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="https://www.hn.cl/wp-content/uploads/2021/01/VPN-HN-INFO.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text text-justify">Una conexión VPN disfraza sus datos en línea y los protege del acceso
+              externo. Cualquiera que tenga acceso a la red y quiera hacerlo puede ver los datos no cifrados; sin
+              embargo, con una VPN los hackers y los cibercriminales no pueden descifrar estos datos y simplemente ven
+              caracteres sin sentido.</p>
+          </div>
+        </div>
+      </div>
+      <div class="info-container-30">
+        <div class="text-justify">
+          <p><b>Codifica los datos privados a través de encriptación</b></p>
+          <p>Al utilizar un servicio VPN, el tráfico de internet y toda la información personal, ubicadas dentro del
+            túnel privado, son codificados a través de encriptación. Además, para leer los datos, se necesita una clave
+            de cifrado, ya que sin ella, le llevaría millones de años a una computadora descifrar el código en caso de
+            un ataque de fuerza bruta.</p>
+        </div>
+        <div class="text-justify">
+          <p><b>Permite acceder a contenido regional</b></p>
+          <p>El contenido web regional no siempre es accesible desde cualquier parte. Los servicios y los sitios web a
+            menudo contienen contenido que solo puede accederse desde ciertas partes del mundo. Con la suplantación de
+            ubiación de VPN, puede cambiar a un servidor a otro país y “cambiar” su ubicación de manera eficaz.</p>
+        </div>
+        <div class="text-justify">
+          <p><b>Encapsula el tráfico de internet</b></p>
+          <p>Los datos de internet que circulan se mueven en paquetes, de manera que al utilizar una conexión VPN, todos
+            los paquetes de datos de la persona se encapsulan dentro de paquetes de datos adicionales.</p>
+        </div>
+      </div>
+      <div class="card mb-3">
+        <img src="https://kinsta.com/wp-content/uploads/2020/10/how-a-vpn-works-infographic-730x484_orig.png"
+          style="height: 30em;" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">¿Qué debe hacer una buena VPN?</h5>
+          <p class="card-text">Una VPN debería realizar una o más de las siguientes tareas: cifrar la dirección IP,
+            cifrado de protocolos (no dejar rastros como cookies), kill switch (reducir la posibilidad de que se
+            compremetan los dattos de interrumpirse la conexión segura), autenticación de dos factores.</p>
+        </div>
+      </div>
+      <div class="container-70-reverse">
+        <div class="card" style="width: 20rem;">
+          <img
+            src="https://blog.avast.com/hs-fs/hubfs/avast-blog/Essential%20Guide%20to%20VPNs/how-a-vpn-works.jpg?width=680&height=202&name=how-a-vpn-works.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text text-justify">Representación gráfica de la intercepción de una VPN en una red al navegar
+              por internet.</p>
+          </div>
+        </div>
+        <div class="text-justify">
+          <h5 class="h5">¿Por qué necesito una VPN?</h5>
+          <p>Otro motivo por el cual se debe utilizar una VPN es la proliferación de las cafeterías modernas, ya que en
+            estos lugares podemos encontrar una gran cantidad de portátiles que acceden a una red wi-fi que es de acceso
+            público y, por ende, un paraíso para los ahckers. Usar una VPN evitará que los hackers que acechan en el
+            mismo punto de acceso wi-fi espíen todo lo que los usuarios hagan. Además, como ya se mencionó, una VPN
+            garantiza su privacidad, incluso ante su proveedor de servicios de Internet, para que nadie pueda seguir los
+            movimientos que hace ni ver sus datos.</p>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <div name="Referencias">
+      <h5 class="h5">Referencias</h5>
+      <ul>
+        <li>¿Qué es una VPN y cómo funciona?. (2021). Retrieved 27 Novembre 2021, from <a
+            href="https://latam.kaspersky.com/resource-center/definitions/what-is-a-vpn" target="_blank"
+            rel="noopener noreferrer">https://latam.kaspersky.com/resource-center/definitions/what-is-a-vpn</a></li>
+        <li>Mocan, T. (2019). ¿Qué Es IPSec y Cómo Funciona?. Retrieved 27 November 2021, from <a
+            href="https://www.cactusvpn.com/es/la-guia-para-principiantes-de-vpn/que-es-ipsec/" target="_blank"
+            rel="noopener noreferrer">https://www.cactusvpn.com/es/la-guia-para-principiantes-de-vpn/que-es-ipsec/</a>
+        </li>
+        <li>García, I. (2021). VPN: ¿qué es y para qué sirve?. Retrieved 27 November 2021, from <a
+            href="https://www.servnet.mx/blog/vpn-que-es-y-para-que-sirve" target="_blank"
+            rel="noopener noreferrer">https://www.servnet.mx/blog/vpn-que-es-y-para-que-sirve</a></li>
+        <li>Mecanismos de protección de IPsec - Guía de administración del sistema: servicios IP. (2021). Retrieved 28
+          November 2021, from <a href="https://docs.oracle.com/cd/E24842_01/html/820-2981/ipsec-ov-7.html"
+            target="_blank"
+            rel="noopener noreferrer">https://docs.oracle.com/cd/E24842_01/html/820-2981/ipsec-ov-7.html</a></li>
+        <li>Guí­a básica sobre VPN: Qué son y cómo funcionan. (2018, 26 febrero). Avast. Retrieved 29 November 2021,
+          from <a href="https://blog.avast.com/es/guia-basica-sobre-vpn-que-son-y-como-funcionan" target="_blank"
+            rel="noopener noreferrer">https://blog.avast.com/es/guia-basica-sobre-vpn-que-son-y-como-funcionan</a></li>
+      </ul>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

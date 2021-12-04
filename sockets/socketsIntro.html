@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="shortcut icon" href="/assets/icon.svg">
+  <title>Proyecto Integrador</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand title-text" href="../index.html">Redes y Seguridad de Computadoras</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-white bg-dark" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav navbar-dark bg-dark justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="offcanvasNavbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Sockets</a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item text-light" href="../sockets/socketsIntro.html">Introducción</a></li>
+                <li><a class="dropdown-item text-light" href="../sockets/socketsDefin.html">Definición</a></li>
+                <li><a class="dropdown-item text-light" href="../sockets/socketsProg.html">Programando</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Seguridad en una red</a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item text-light" href="../redSecure/redIntro.html">Introducción</a></li>
+                <li><a class="dropdown-item text-light" href="../redSecure/ipSecure.html">IP Secure</a></li>
+                <li><a class="dropdown-item text-light" href="../redSecure/redVpn.html">VPN</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Seguridad en la Web</a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item text-light" href="../webSecure/seguridadWeb.html">Introducción</a></li>
+                <li><a class="dropdown-item text-light" href="../webSecure/https.html">HTTPS</a></li>
+                <li><a class="dropdown-item text-light" href="../webSecure/ssl.html">SSL</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Internet of Things</a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item text-light" href="../internetOT/iotIntro.html">Introducción</a></li>
+                <li><a class="dropdown-item text-light" href="../internetOT/iotFunct.html">Funcionamiento</a></li>
+                <li><a class="dropdown-item text-light" href="../internetOT/iotApps.html">Aplicaciones IoT</a></li>
+              </ul>
+            </li>
+            <hr>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../recursos.html">Recursos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container-fluid p-3 text-break">
+    <section name="context" id="context">
+      <div class="info-container-full">
+        <h1 class="h1">¿Qué sabemos sobre los sockets?</h1>
+        <p>Al hablar de sockets en programación, es importante tener conocimiento con respecto a las redes de
+          computadoras y de los protocolos que aplican dentro de ellas. Por un lado, los protocolos son usados para
+          múltiples tareas, incluyendo mensajería instantánea, sin embargo, esta es sólo una de las muchas capas que
+          existen en el sistema de 7 capas conocido como Modelo OSI, el cual es importante comprender para entender la
+          programación de aplicaciones con sockets.</p>
+        <p>El modelo OSI está basado en una propuesta desarrollada por la ISO (Organización Internacional de Estándares)
+          como un primer paso hacia la estandarización internacional de los protocolos utilizados en varias capas. Su
+          nombre, OSI (Interconexión de Sistemas Abiertos) tiene que ver con sistemas que están abiertos a la
+          comunicación con otros sistemas. Este modelo está conformado por siete capas, y cada una de estas tiene una
+          abstracción diferente y realiza una función bien definida.</p>
+      </div>
+      <div class="container-70-reverse">
+        <div class="card" style="width: 18rem;">
+          <img src="../assets/osi.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text text-justify">En el modelo OSI, la transmisión de los datos desde el primer extremo
+              comienza en la capa de aplicación hasta llegar a la capa física.</p>
+          </div>
+        </div>
+        <div class="text-justify">
+          <p>
+            La comunicación de redes usando sockets involucra múltiples pasos básicos que tienen que ser seguidos al pie
+            de la letra por el desarrollador de la aplicación para poder tener un mecanismo de transporte funcional
+            entre las dos partes incolucradas en la comunicación. El primer paso involucra la creación y apertura de los
+            sockets, ya que cada extremo de la comunicación requiere un socket individual; esta creación/apertura del
+            socket particular requiere de parámetros importantes que deben proveerse como:
+          </p>
+          <ul>
+            <li>Dirección Ip</li>
+            <li>Número de Puerto</li>
+            <li>Protocolo de Comunicación</li>
+          </ul>
+          <p>El segundo paso involucra el establecer contacto o asociar el socket personal de cada entidad con otro
+            socket. Es importante saber que para que los sockets puedan comunicarse entre sí, estos deben estar usando
+            el <b>mismo protocolo</b> de comunicación. De manera general, el cliente conoce la dirección IP, el número
+            de puerto y el protocolo que está siendo usado por el servidor y por ello puede contactarlo usando su
+            información; sin embargo, dependiendo del protocolo usado, el cliente puede <b>pedir</b> un servicio o
+            <b>establecer</b> una conexión.
+          </p>
+        </div>
+      </div>
+      <div class="info-container-full" style="margin-top: 1em;">
+        <p>El tercer paso consiste en intercambiar información entre las dos entidades involucradas en el proceso de
+          comunicación y representar el estado principal de las tareas de comunicación de la aplicación de red . Este
+          paso normalmente pasa de manera recursiva. La información es enviada y recibida por los dos sockets que se
+          están comunicando.</p>
+        <p>Finalmente, el último paso consiste en cerrar y destruir los sockets para cerrar así los puntos de
+          comunicación. Posterior a su destrucción, el socket no puede ser usado para comunicarse.</p>
+      </div>
+    </section>
+    <hr>
+    <section name="history">
+      <div class="container-70-reverse">
+        <div class="card" style="width: 18rem;">
+          <img src="../assets/clientServer.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text text-justify">Ejemplo del funcionamiento del modelo Cliente-Servidor para aplicaciones.
+            </p>
+          </div>
+        </div>
+        <div class="text-justify">
+          <h3 class="h3">Historia</h3>
+          <p>En los orígenes de Internet, las primeras computadoras en implementar sus protocolos fueron las de la
+            Universidad de Berkeley a principios de los 80. Dicha implementación tuvo lugar en una variante del sistema
+            operativo Unix conocida como BSD Unix, esto para proporcionar un medio de comunicación entre procesos y
+            presentar una funcionalidad parecida a la comunicación por correo o por teléfono. Pronto se hizo evidente
+            que los programadores necesitarían un medio sencillo y eficaz para escribir programas capaces de
+            intercomunicarse entre sí; así pues, fue esta necesidad (la de permitir que 2 procesos establezcan
+            comunicación aún estando en distintas máquinas) la que dio origen a la primera especificación e
+            implementación de sockets, también en Unix.</p>
+          <p>Actualmente, los sockets están implementados como bibliotecas de programación para multitud de sistemas
+            operativos, simplificando la tarea de los programadores.</p>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <div class="d-flex mt-4 justify-content-between align-items-center">
+      <a class="btn btn-primary btn-lg" href="../index.html" role="button" aria-disabled="true">Ir a Inicio</a>
+      <a class="btn btn-secondary btn-lg" href="../sockets/socketsDefin.html" role="button"
+        aria-disabled="true">Siguiente
+        Página</a>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

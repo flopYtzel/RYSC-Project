@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="shortcut icon" href="../assets/icon.svg">
+    <title>Proyecto Integrador</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand title-text" href="../index.html">Redes y Seguridad de Computadoras</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-white bg-dark" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav navbar-dark bg-dark justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">Sockets</a>
+                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="offcanvasNavbarDropdown">
+                      <li><a class="dropdown-item text-light" href="../sockets/socketsIntro.html">Introducción</a></li>
+                      <li><a class="dropdown-item text-light" href="../sockets/socketsDefin.html">Definición</a></li>
+                      <li><a class="dropdown-item text-light" href="../sockets/socketsProg.html">Programando</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">Seguridad en una red</a>
+                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="offcanvasNavbarDropdown">
+                    <li><a class="dropdown-item text-light" href="../redSecure/redIntro.html">Introducción</a></li>
+                    <li><a class="dropdown-item text-light" href="../redSecure/ipSecure.html">IP Secure</a></li>
+                    <li><a class="dropdown-item text-light" href="../redSecure/redVpn.html">VPN</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle active" href="#" id="offcanvasNavbarDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">Seguridad en la Web</a>
+                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="offcanvasNavbarDropdown">
+                      <li><a class="dropdown-item text-light" href="../webSecure/seguridadWeb.html">Introducción</a></li>
+                      <li><a class="dropdown-item text-light" href="../webSecure/https.html">HTTPS</a></li>
+                      <li><a class="dropdown-item text-light" href="../webSecure/ssl.html">SSL</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">Internet of Things</a>
+                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="offcanvasNavbarDropdown">
+                      <li><a class="dropdown-item text-light" href="../internetOT/iotIntro.html">Introducción</a></li>
+                      <li><a class="dropdown-item text-light" href="../internetOT/iotFunct.html">Funcionamiento</a></li>
+                      <li><a class="dropdown-item text-light" href="../internetOT/iotApps.html">Aplicaciones IoT</a></li>
+                  </ul>
+                </li>
+                <hr>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../recursos.html">Recursos</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <main class="container-fluid p-3 text-break">
+        <section name="Https" id="Https">
+            <div class="info-container-100">
+                <div class="text-justify">
+                    <h2 class="h2">HTTPS</h2>
+                    <p>En inglés HyperText Transfer Protocol Secure (protocolo seguro de transferencia de hipertexto), es un protocolo de comunicación de Internet que protege la integridad y la confidencialidad de los datos de los usuarios entre sus ordenadores y el sitio web. Este protocolo es especialmente importante cuando los usuarios comparten información sensible como, por ejemplo, ingresar a un sitio bancario, servicio de email o visitar un sitio de seguros.</p>
+                </div>
+                <div class="card mb-3">
+                    <img src="https://www.softzone.es/app/uploads-softzone.es/2018/04/HTTP-vs-HTTPS.png" class="card-img-top" style="height: 30em;" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">¿Por qué es importante HTTPS?</h5>
+                      <p class="card-text">El Protocolo HTTPS previene que los sitios expongan su información de manera tal que es de fácil acceso para cualquiera que esté observando la red. Cuando la información se envía por HTTP, la información se intercambia en texto plano, haciéndola accesible y vulnerable, mientras que con HTTPS los paquetes se encriptan y, de ser espiados, se visualizan como caracteres sin sentido.
+                      </p>
+                    </div>
+                </div>
+            </div>
+            <div class="info-container-70">
+                <div class="text-justify">
+                    <p>HTTPS usa un protocolo de para encriptar las comunicaciones, dicho protocolo se conoce como TLS (Transport Layer Security). Este protocolo es una versión mejorada del SSL y procura la seguridad de las comunicaciones usando una infraestructura de clave pública asimétrica. </p>
+                    <p>Este protocolo proporciona 3 capas principales de seguridad:</p>
+                    <ol>
+                        <li><b>Cifrado:</b>El cifrado en ciberseguridad es la conversión de datos de un formato legible a un formato codificado. Los datos cifrados solo se pueden leer o procesar luego de descifrarlos. Los tipos más comunes de cifrado de datos son el cifrado simétrico y el asimétrico.</li>
+                        <li><b>Integridad de los datos:</b>El objetivo de la integridad es prevenir modificaciones no autorizadas de la información. Los datos deben estar completos, sin variaciones o compromisos del original, que se considera confiable y exacto.</li>
+                        <li><b>autenticación:</b>Demuestra que tus usuarios se comunican con el sitio web previsto. Proporciona protección frente a los ataques de intermediarios y fomenta la confianza de los usuarios.</li>
+                    </ol>
+                    <b>¿Cómo saber si un sitio web usa el protocolo?</b>
+                    <p>Si aparecen las letras HTTPS al principio de la dirección (URL) de un sitio web, dicho sitio está protegido por un certificado SSL o TLS. Además, en la barra de direcciones del navegador aparece un icono de un candado, el cual puede ser "clickeado" por los usuarios para mayor información en el certificado.</p>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://cdn.ttgtmedia.com/rms/onlineimages/security-tls_1.3_handshake-h.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text text-justify">Representación gráfica de cómo funciona el protocolo TLS.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <div class="d-flex mt-4 justify-content-between align-items-center">
+            <a class="btn btn-primary btn-lg" href="../webSecure/seguridadWeb.html" role="button" aria-disabled="true">Ir a Seguridad Web</a>
+            <a class="btn btn-secondary btn-lg" href="../webSecure/ssl.html" role="button" aria-disabled="true">Ir a SSL</a>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+</html>

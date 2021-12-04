@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="shortcut icon" href="../assets/icon.svg">
+    <title>Proyecto Integrador</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand title-text" href="../index.html">Redes y Seguridad de Computadoras</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-white bg-dark" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav navbar-dark bg-dark justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">Sockets</a>
+                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="offcanvasNavbarDropdown">
+                      <li><a class="dropdown-item text-light" href="../sockets/socketsIntro.html">Introducción</a></li>
+                      <li><a class="dropdown-item text-light" href="../sockets/socketsDefin.html">Definición</a></li>
+                      <li><a class="dropdown-item text-light" href="../sockets/socketsProg.html">Programando</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">Seguridad en una red</a>
+                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="offcanvasNavbarDropdown">
+                    <li><a class="dropdown-item text-light" href="../redSecure/redIntro.html">Introducción</a></li>
+                    <li><a class="dropdown-item text-light" href="../redSecure/ipSecure.html">IP Secure</a></li>
+                    <li><a class="dropdown-item text-light" href="../redSecure/redVpn.html">VPN</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle active" href="#" id="offcanvasNavbarDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">Seguridad en la Web</a>
+                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="offcanvasNavbarDropdown">
+                      <li><a class="dropdown-item text-light" href="../webSecure/seguridadWeb.html">Introducción</a></li>
+                      <li><a class="dropdown-item text-light" href="../webSecure/https.html">HTTPS</a></li>
+                      <li><a class="dropdown-item text-light" href="../webSecure/ssl.html">SSL</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">Internet of Things</a>
+                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="offcanvasNavbarDropdown">
+                      <li><a class="dropdown-item text-light" href="../internetOT/iotIntro.html">Introducción</a></li>
+                      <li><a class="dropdown-item text-light" href="../internetOT/iotFunct.html">Funcionamiento</a></li>
+                      <li><a class="dropdown-item text-light" href="../internetOT/iotApps.html">Aplicaciones IoT</a></li>
+                  </ul>
+                </li>
+                <hr>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../recursos.html">Recursos</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <main class="container-fluid p-3 text-break">
+        <section name="introducction">
+            <div class="info-container-70" id="SeguridadWeb">
+                <div class="text-justify">
+                    <h1 class="h1">Seguridad en la Web</h1>
+                    <p>El propósito de la seguridad web es prevenir ataques dirigidos a la misma para evitar que los usuarios sean víctimas de los diversos peligros del internet como estafas financieras o robo de información personal. Así pues, la seguridad web es la acción/práctica de proteger sitios web del acceso, uso, modificación, destrucción o interrupción, no autorizados; esta protección requiere de un esfuerzo de diseño que va más allá de simplemente la aplicación web, sino que involucra configuración del lado del servidor, entre otros aspectos.</p>
+                    <p>La ciberseguridad es importante porque los sitios web desprotegidos están expuestos a sufrir situaciones como:</p>
+                    <ul>
+                        <li>Robo de información guardada en el servidor web y minería de criptomonedas.</li>
+                        <li>Explotación de datos personales y realizar descargas de software malicioso.</li>
+                        <li>Redireccionamiento a páginas web maliciosas y anuncios no deseados.</li>
+                    </ul>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://irp-cdn.multiscreensite.com/55d07fd3/http-https-candado.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text text-justify">Representación gráfica de la diferencia entre el protocolo HTTP y el HTTPS. Por decirlo de alguna manera: el protocolo HTTPS es la versión segura del HTTP.</p>
+                    </div>
+                </div>
+            </div>
+            <h4 class="h4">Peligros principales de la web</h4>
+            <div class="info-container-30 text-justify">
+                <div class="card text-dark bg-warning mb-3" style="max-width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Malware</h5>
+                      <p class="card-text">El malware es un software creado con fines maliciosos, diseñado para infectar y dañar un sistema. Abarca vulnerabilidades que van desde los virus informáticos hasta el adware que puede infectar tanto a las computadoras como a las páginas web. Dos de los tipos más comunes son el defacement y la redirección maliciosa.</p>
+                    </div>
+                </div>
+                <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Inyección SQL</h5>
+                      <p class="card-text">La inyección SQL es un tipo de ciberataque que involucra declaraciones SQL maliciosas o códigos de aplicación que se inyectan en los campos de entrada del usuario. Este proceso permite a los atacantes obtener acceso al backend de la web o al contenido corrupto de la base de datos.</p>
+                    </div>
+                </div>
+                <div class="card text-dark bg-warning mb-3" style="max-width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Ataque DDoS</h5>
+                      <p class="card-text">Se trata de tráfico falso que proviene de equipos controlados por atacantes, a menudo llamados botnets. Un botnet es una red de computadoras hackeadas, conectadas a internet, que ejecutan uno o más bots. Si el ataque es lo suficientemente fuerte, el servidor puede bloquearse, desactivando así por completo la página web.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <div class="d-flex mt-4 justify-content-between align-items-center">
+            <a class="btn btn-primary btn-lg" href="../index.html" role="button" aria-disabled="true">Ir a Inicio</a>
+            <a class="btn btn-secondary btn-lg" href="../webSecure/https.html" role="button" aria-disabled="true">Ir a HTTPS</a>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+</html>

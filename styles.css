@@ -1,0 +1,82 @@
+body{
+    background-color: #DDDFE3;
+}
+
+.title-text{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.team-text{
+    border-radius: .3em;
+    padding: .5em;
+}
+
+.info-container-100, .info-container-100, .info-container-30{
+    margin: 1em 2em;
+}
+
+.info-container-70{
+    display: grid;
+    grid-template-columns: [columnA] 70% [columnB] 30%;
+    justify-items: center;
+}
+
+.container-70-reverse{
+    display: grid;
+    grid-template-columns: [columnA] 30% [columnB] 70%;
+    justify-items: center;
+}
+
+.info-container-30{
+    display: grid;
+    grid-template-columns: [columnA] 30% [columnB] 30% [columnC] 30%;
+    column-gap: 3.5em;
+    justify-items: center;
+}
+
+.cards-container-flex{
+    height: 87vh;
+}
+
+.team-section{
+    background-image: url('https://images.unsplash.com/uploads/141103282695035fa1380/95cdfeef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1130&q=80');
+    background-repeat: repeat-x;
+
+    height: 87vh;
+    padding: 3em;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.video-container{
+    margin: 2em;
+    text-align: center;
+}
+
+iframe{
+    margin: 2em;
+}
+
+figure{
+    padding: 1em;
+    border-radius: 1em;
+    color: #DDDFE3 !important;
+}
+
+.card, .card > img{
+    border-radius: 1em !important;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}

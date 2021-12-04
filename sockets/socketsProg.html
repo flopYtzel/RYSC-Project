@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="shortcut icon" href="/assets/icon.svg">
+  <title>Proyecto Integrador</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand title-text" href="../index.html">Redes y Seguridad de Computadoras</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-white bg-dark" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav navbar-dark bg-dark justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="offcanvasNavbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Sockets</a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item text-light" href="../sockets/socketsIntro.html">Introducción</a></li>
+                <li><a class="dropdown-item text-light" href="../sockets/socketsDefin.html">Definición</a></li>
+                <li><a class="dropdown-item text-light" href="../sockets/socketsProg.html">Programando</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Seguridad en una red</a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item text-light" href="../redSecure/redIntro.html">Introducción</a></li>
+                <li><a class="dropdown-item text-light" href="../redSecure/ipSecure.html">IP Secure</a></li>
+                <li><a class="dropdown-item text-light" href="../redSecure/redVpn.html">VPN</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Seguridad en la Web</a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item text-light" href="../webSecure/seguridadWeb.html">Introducción</a></li>
+                <li><a class="dropdown-item text-light" href="../webSecure/https.html">HTTPS</a></li>
+                <li><a class="dropdown-item text-light" href="../webSecure/ssl.html">SSL</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Internet of Things</a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item text-light" href="../internetOT/iotIntro.html">Introducción</a></li>
+                <li><a class="dropdown-item text-light" href="../internetOT/iotFunct.html">Funcionamiento</a></li>
+                <li><a class="dropdown-item text-light" href="../internetOT/iotApps.html">Aplicaciones IoT</a></li>
+              </ul>
+            </li>
+            <hr>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../recursos.html">Recursos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container-fluid p-3 text-break">
+    <section name="programming">
+      <div class="info-container-full" style="margin-top: 1em;">
+        <h1 class="h1">Programación Usando Sockets</h1>
+        <p>La programación con sockets es una forma de conectar dos nodos en una red para que se comuniquen entre sí.
+          Como se ha mencionado, uno de los sockets (o nodo) se encontrará escuchando en un puerto en particular en una
+          IP, mientras que otro socket trata de establecer una forma de conectarse. El servidor funge como el socket que
+          escucha, mientras que el cliente trata de contactarlo para obtener información.</p>
+      </div>
+      <div class="info-container-70">
+        <div class="text-justify">
+          <p>Dada la definición de lo que es un Socket y la descripción de su funcionamiento, es claro que las
+            aplicaciones programadas con estos puedan establecer una comunicación donde las entidades (cliente y
+            servidor) pueden estar en el mismo sistema o en diferentes sistemas que a su vez se encuentren en diferentes
+            redes, pues los sockets permiten el intercambio de la información entre procesos en la misma máquina o a
+            través de la red, así como distribuir el trabajo a la máquina más eficiente y permitir el fácil acceso a la
+            información centralizada.</p>
+          <p>Las interfaces de programa de aplicación (API) de socket son el estándar de red para TCP / IP. Una amplia
+            gama de sistemas operativos admite API de socket; aunado a esto, la conexión que proporciona un socket puede
+            estar orientada a la conexión o a la no conexión.</p>
+          <p>Por un lado, la comunicación <b>orientada a la conexión</b> implica que se establece una conexión y que le
+            sigue un diálogo entre los programas. El programa que provee el servicio (servidor) establece el socket
+            disponible que está autorizado para aceptar las peticiones de conexión entrantes. Ahora bien, la
+            comunicación <b>orientada a la no conexión</b> implica que no existe una conexión establecida sobre la cual
+            el diálogo o la transferencia de datos pueda tomar lugar. En su lugar, el servidor designa un nombre que
+            identifica a dónde dirigirse, es decir, no existe una conexión en tiempo real.</p>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="https://media.geeksforgeeks.org/wp-content/uploads/Socket_server.png" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <p class="card-text text-justify">Diagrama de estado para el modelo cliente-servidor.</p>
+          </div>
+        </div>
+      </div>
+      <div class="info-container-full">
+        <p>Algunas características que comparten los sockets en la programación, son:</p>
+        <ul>
+          <li>Un socket se representa por un integer y dicho dato se conoce como "descriptor del socket"</li>
+          <li>Un socket existe tanto tiempo como el proceso ejecutándose mantenga abierto el enlace de la conexión con
+            dicho socket.</li>
+          <li>Es posible nombrar un socket y usarlo para comunicarse con otros sockets en un dominio de comunicación.
+          </li>
+          <li>Los sockets realizan la comunicación cuando el servidor acepta la comunicación desde ellos o cuando
+            intercambia mensajes con ellos.</li>
+          <li>Es posible crear sockets en pares.</li>
+        </ul>
+        <div class="card mb-3">
+          <img src="https://static.javatpoint.com/core/images/socket-programming.png" class="card-img-top"
+            style="height: 35em;" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">¿Cómo se determinan las características del socket?</h5>
+            <p class="card-text">Cuando una aplicación crea un socket con la API de socket(), es necesario especificar
+              los siguientes parámetros para contribuir a la identificación de cómo se determinarán las características
+              del socket:</p>
+            <ul>
+              <li>La familia de direcciones de socket determina el formato de la estructura de direcciones para el
+                socket.</li>
+              <li>El tipo de socket determina la forma de comunicación para él mismo.</li>
+              <li> El protocolo de socket determina los protocolos admitidos que utiliza él mismo.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+    <div name="Referencias">
+      <h5 class="h5">Referencias</h5>
+      <ul>
+        <li>Ciubotaru, B., & Muntean, G.-M. (2013). Sockets. Advanced Network Programming – Principles and Techniques,
+          73–87. doi:10.1007/978-1-4471-5292-7_5 </li>
+        <li>Tanenbaum, A., Wetherall, D. and Vidal Romero Elizondo, A., 2003. Redes de computadoras. 4th ed. México:
+          Pearson Prentice Hall, pp.37-38.</li>
+        <li>Egan, S. (2005). Open Source Messaging Application Development: Building and Extending Gaim (Illustrated
+          ed.). Apress.</li>
+        <li>EcuRed. (s. f.). Socket - EcuRed. <a href="https://www.ecured.cu/Socket" target="_blank"
+            rel="noopener noreferrer">https://www.ecured.cu/Socket</a></li>
+        <li>Sinha, A. (2019). Socket Programming in C/C++ - GeeksforGeeks. Retrieved 28 November 2021, from <a
+            href="https://www.geeksforgeeks.org/socket-programming-cc/" target="_blank"
+            rel="noopener noreferrer">https://www.geeksforgeeks.org/socket-programming-cc/</a></li>
+        <li>IBM Docs. (2021). Retrieved 28 November 2021, from <a
+            href="https://www.ibm.com/docs/en/i/7.2?topic=communications-socket-programming" target="_blank"
+            rel="noopener noreferrer">https://www.ibm.com/docs/en/i/7.2?topic=communications-socket-programming</a></li>
+        <li>Programación en C/Sockets - Wikilibros. Retrieved 28 November 2021, from <a
+            href="https://es.wikibooks.org/wiki/Programaci%C3%B3n_en_C/Sockets#Cliente_2" target="_blank"
+            rel="noopener noreferrer">https://es.wikibooks.org/wiki/Programaci%C3%B3n_en_C/Sockets#Cliente_2</a></li>
+      </ul>
+    </div>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

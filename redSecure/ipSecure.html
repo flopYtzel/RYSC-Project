@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="shortcut icon" href="../assets/icon.svg">
+  <title>Proyecto Integrador</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand title-text" href="../index.html">Redes y Seguridad de Computadoras</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-white bg-dark" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav navbar-dark bg-dark justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Sockets</a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item text-light" href="../sockets/socketsIntro.html">Introducción</a></li>
+                <li><a class="dropdown-item text-light" href="../sockets/socketsDefin.html">Definición</a></li>
+                <li><a class="dropdown-item text-light" href="../sockets/socketsProg.html">Programando</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="offcanvasNavbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Seguridad en una red</a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item text-light" href="../redSecure/redIntro.html">Introducción</a></li>
+                <li><a class="dropdown-item text-light" href="../redSecure/ipSecure.html">IP Secure</a></li>
+                <li><a class="dropdown-item text-light" href="../redSecure/redVpn.html">VPN</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Seguridad en la Web</a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item text-light" href="../webSecure/seguridadWeb.html">Introducción</a></li>
+                <li><a class="dropdown-item text-light" href="../webSecure/https.html">HTTPS</a></li>
+                <li><a class="dropdown-item text-light" href="../webSecure/ssl.html">SSL</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Internet of Things</a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item text-light" href="../internetOT/iotIntro.html">Introducción</a></li>
+                <li><a class="dropdown-item text-light" href="../internetOT/iotFunct.html">Funcionamiento</a></li>
+                <li><a class="dropdown-item text-light" href="../internetOT/iotApps.html">Aplicaciones IoT</a></li>
+              </ul>
+            </li>
+            <hr>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../recursos.html">Recursos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container-fluid p-3 text-break">
+    <section id="IpSecure">
+      <div class="info-container-full">
+        <div class="text-justify">
+          <h2 class="h2">IP Secure</h2>
+          <p>IPSec (Internet Protocol Security) está compuesto por varios protocolos de seguridad diferentes y está
+            diseñado para garantizar que los paquetes de datos enviados a través de una red IP permanezcan invisibles e
+            inaccesibles para terceros. IPSec proporciona altos niveles de seguridad para el Protocolo de Internet. El
+            cifrado se utiliza para garantizar la confidencialidad y para la autenticación.</p>
+        </div>
+      </div>
+      <div class="info-container-100 text-justify">
+        <h4 class="h4">Funcionamiento</h4>
+        <p>La mayoría de los otros protocolos de seguridad funcionan en la capa de aplicación de la comunicación de red.
+          Una ventaja importante de IPsec es que, debido a que opera a nivel de red en lugar de a nivel de aplicación,
+          puede encriptar un paquete completo de IP, lo cual puede realizarlo con dos mecanismos:</p>
+        <ul>
+          <li> <b>Encabezado de autenticación (AH):</b> Coloca una firma digital en cada paquete, protegiendo su red y
+            sus datos de la interferencia de terceros, además de que garantiza que el receptor recibe exactamente lo que
+            ha enviado el remitente.. Un AH significa que el contenido de un paquete de datos no puede modificarse sin
+            detección, y también permite la verificación de identidad entre los dos extremos de una conexión.
+            <div class="card mb-3">
+              <img src="../assets/redSecure/AH.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Diagrama de AH</h5>
+                <p class="card-text">AH protege la mayor parte del datagrama IP. El encabezado de transporte puede ser
+                  TCP, UDP, SCTP o ICMP. Si se utiliza un túnel, el encabezado de transporte puede ser otro encabezado
+                  de IP.</p>
+              </div>
+            </div>
+          </li>
+          <li> <b>Carga de Seguridad Encapsulada (ESP): </b> Mientras que el AH evita la manipulación de un paquete, el
+            ESP garantiza que la información dentro del paquete esté encriptada y no pueda leerse, garantizando así la
+            confidencialidad. Este mecanismo utiliza un encabezado ESP, un tráiler y un bloque de autenticación para
+            cifrar la carga útil completa de un paquete.
+            <div class="card mb-3">
+              <img src="../assets/redSecure/ESP.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Diagrama de ESP</h5>
+                <p class="card-text">En un paquete TCP, ESP encapsula únicamente el encabezado TCP y sus datos. Si el
+                  paquete se encuentra en un datagrama de IP en IP, ESP protege el datagrama IP interior. La directiva
+                  por socket permite la autoencapsulación, de modo que ESP puede encapsular las opciones de IP cuando lo
+                  necesita.</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr>
+    <div class="d-flex mt-4 justify-content-between align-items-center">
+      <a class="btn btn-primary btn-lg" href="../redSecure/redIntro.html" role="button" aria-disabled="true">Ir a
+        Introducción</a>
+      <a class="btn btn-secondary btn-lg" href="../redSecure/redVpn.html" role="button" aria-disabled="true">Ir a
+        VPN</a>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
